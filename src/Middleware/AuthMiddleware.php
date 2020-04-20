@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Middleware;
+namespace Hanus\Admin\Middleware;
 
 use Hyperf\HttpServer\Contract\ResponseInterface as HttpResponse;
 use Psr\Http\Message\ResponseInterface;
@@ -12,7 +12,7 @@ use Phper666\JwtAuth\Exception\TokenValidException;
 use Hyperf\Contract\SessionInterface;
 use Illuminate\Support\MessageBag;
 use Hyperf\Utils\Context;
-use Oyhdd\Admin\Model\AdminUser;
+use Hanus\Admin\Model\AdminUser;
 
 class AuthMiddleware implements MiddlewareInterface
 {

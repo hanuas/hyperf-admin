@@ -2,7 +2,7 @@
 
 use Hyperf\Database\Seeders\Seeder;
 use Illuminate\Hashing\BcryptHasher;
-use Oyhdd\Admin\Model\{AdminUser, AdminRole, AdminRoleMenu, AdminRolePermission, AdminPermission, AdminMenu, AdminRoleUser};
+use Hanus\Admin\Model\{AdminUser, AdminRole, AdminRoleMenu, AdminRolePermission, AdminPermission, AdminMenu, AdminRoleUser};
 
 class AdminTableSeeder extends Seeder
 {

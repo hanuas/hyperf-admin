@@ -1,9 +1,9 @@
 <?php declare (strict_types=1);
 
-namespace Oyhdd\Admin\Model;
+namespace Hanus\Admin\Model;
 
 use Hyperf\Database\Model\Relations\BelongsToMany;
-use Oyhdd\Admin\Model\AdminPermission;
+use Hanus\Admin\Model\AdminPermission;
 
 /**
  * @property int $id 

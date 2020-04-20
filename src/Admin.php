@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin;
+namespace Hanus\Admin;
 
 /**
  * Class Admin.

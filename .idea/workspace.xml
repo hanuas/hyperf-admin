@@ -2,10 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b038ee4-5dcb-4843-9bbe-29374bd53197" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/view/logs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/logs/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/admin_table_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/admin_table_seeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/view/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/layout/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/InstallCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/InstallCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/stubs/HomeController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/stubs/HomeController.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConfigProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfigProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PermissionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PermissionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Middleware/AuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Middleware/AuthMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Middleware/VerifyCsrfTokenMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Middleware/VerifyCsrfTokenMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminOperationLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminOperationLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminPermission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminPermission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminRole.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminRole.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminRoleMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminRoleMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminRolePermission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminRolePermission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminRoleUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminRoleUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminUserPermission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminUserPermission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/BaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BaseModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +67,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587296523759</updated>
-      <workItem from="1587296525302" duration="2240000" />
+      <workItem from="1587296525302" duration="2478000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="386" y="182" width="816" height="550" key="find.popup" timestamp="1587393483730">
+      <screen x="0" y="0" width="1440" height="850" />
+    </state>
+    <state x="386" y="182" width="816" height="550" key="find.popup/0.0.1440.850@0.0.1440.850" timestamp="1587393483730" />
   </component>
 </project>

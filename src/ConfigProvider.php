@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin;
+namespace Hanus\Admin;
 
-use Oyhdd\Admin\Command\InstallCommand;
+use Hanus\Admin\Command\InstallCommand;
 use Hyperf\Server\SwooleEvent;
 use Hyperf\Framework\Bootstrap\TaskCallback;
 use Hyperf\Framework\Bootstrap\FinishCallback;
 use Hyperf\Session\Middleware\SessionMiddleware;
-use Oyhdd\Admin\Middleware\VerifyCsrfTokenMiddleware;
+use Hanus\Admin\Middleware\VerifyCsrfTokenMiddleware;
 
 class ConfigProvider
 {

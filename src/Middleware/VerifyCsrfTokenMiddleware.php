@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Middleware;
+namespace Hanus\Admin\Middleware;
 
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;

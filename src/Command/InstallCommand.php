@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Command;
+namespace Hanus\Admin\Command;
 
 use Hyperf\Command\Command as HyperfCommand;
 use Hyperf\Command\Annotation\Command;
 use Psr\Container\ContainerInterface;
 use Hyperf\Utils\Filesystem\Filesystem;
-use Oyhdd\Admin\Model\AdminTableSeeder;
+use Hanus\Admin\Model\AdminTableSeeder;
 
 /**
  * @Command
@@ -72,7 +72,7 @@ class InstallCommand extends HyperfCommand
      */
     public function publishResource()
     {
-        $this->call('vendor:publish', ['package' => 'oyhdd/hyperf-admin']);
+        $this->call('vendor:publish', ['package' => 'Hanus/hyperf-admin']);
 
         if (empty(config('session'))) {
             $this->call('vendor:publish', ['package' => 'hyperf/session']);
@@ -94,8 +94,8 @@ class InstallCommand extends HyperfCommand
         }
         $this->fileSystem->copyDirectory(dirname(dirname(__DIR__)). '/resource/view', $this->directory."/View");
 
-        $this->call('migrate', ['--path' => './vendor/oyhdd/hyperf-admin/database/migrations/']);
-        $this->call('db:seed', ['--path' => './vendor/oyhdd/hyperf-admin/database/seeders/']);
+        $this->call('migrate', ['--path' => './vendor/Hanus/hyperf-admin/database/migrations/']);
+        $this->call('db:seed', ['--path' => './vendor/Hanus/hyperf-admin/database/seeders/']);
     }
 
     /**
