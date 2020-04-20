@@ -6,7 +6,7 @@ use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Middleware;
-use Oyhdd\Admin\Middleware\AuthMiddleware;
+use Oyhdd\Admin\Model\AdminOperationLog;
 
 /**
  * @Controller(prefix="admin/logs")
@@ -20,6 +20,7 @@ class LogController extends AdminController
      */
     public function index()
     {
-        return $this->render('logs.index');
+        $logs = AdminOperationLog::all();
+        return $this->render('logs.index', ['logs']);
     }
 }
