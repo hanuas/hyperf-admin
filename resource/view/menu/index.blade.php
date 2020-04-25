@@ -1,80 +1,52 @@
 <?php
-
 $title = '菜单';
 $description = '列表';
 $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
 ?>
 @include('layout.breadcrumb', compact('title', 'description', 'breadcrumb'))
 
-
-
-
-<!-- Page script -->
-<script>
-    $(function() {
-        //Initialize Select2 Elements
-        $('.select2').select2()
-
-        //Initialize Select2 Elements
-        $('.select2bs4').select2({
-            theme: 'bootstrap4'
-        })
-
-        //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
-        //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
-        //Money Euro
-        $('[data-mask]').inputmask()
-
-        //Date range picker
-        $('#reservation').daterangepicker()
-        //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
-            timePicker: true,
-            timePickerIncrement: 30,
-            locale: {
-                format: 'MM/DD/YYYY hh:mm A'
-            }
-        })
-        //Date range as a button
-        $('#daterange-btn').daterangepicker({
-                ranges: {
-                    'Today': [moment(), moment()],
-                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month': [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment()
-            },
-            function(start, end) {
-                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-            }
-        )
-
-        //Timepicker
-        $('#timepicker').datetimepicker({
-            format: 'LT'
-        })
-
-        //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
-
-        //Colorpicker
-        $('.my-colorpicker1').colorpicker()
-        //color picker with addon
-        $('.my-colorpicker2').colorpicker()
-
-        $('.my-colorpicker2').on('colorpickerChange', function(event) {
-            $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
-        });
-
-        $("input[data-bootstrap-switch]").each(function() {
-            $(this).bootstrapSwitch('state', $(this).prop('checked'));
-        });
-
-    })
-</script>
+<section class="content">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <div class="form-group">
+                <div class="input-group col-md-4">
+                    <input id="txtSearchKey" type="text" class="form-control input-sm" placeholder="搜索关键字">
+                    <span class="input-group-btn ">
+                    <button id="btnSearch" class="btn btn btn-primary" type="button"> <i class="fa fa-search"></i> 搜索</button>
+                </span>
+                </div>
+            </div>
+            <div class="jqGrid_wrapper">
+                <table id="table_list"></table>
+                <div id="pager_list"></div>
+            </div>
+        </div>
+    </div>
+    <table class="table table-bordered table-hover dataTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>用户名</th>
+            <th>访问路径</th>
+            <th>访问类型</th>
+            <th>IP</th>
+            <th>输入</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>/admin</td>
+            <td>get</td>
+            <td>127.0.0.7</td>
+            <td>iii</td>
+            <td>2020-04-20 22:23:58</td>
+            <td><a href="javascript:void(0);">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Main content -->
+</section>

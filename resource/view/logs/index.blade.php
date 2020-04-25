@@ -1,6 +1,5 @@
 <?php
-
-$title = '日志';
+$title = '操作日志';
 $description = '列表';
 $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
 ?>
@@ -11,7 +10,7 @@ $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
         <div class="ibox-content">
             <div class="form-group">
                 <div class="input-group col-md-4">
-                    <input id="txtSearchKey" type="text" class="input form-control" placeholder="搜索关键字" />
+                    <input id="txtSearchKey" type="text" class="form-control input-sm" placeholder="搜索关键字" />
                     <span class="input-group-btn ">
                         <button id="btnSearch" class="btn btn btn-primary" type="button"> <i class="fa fa-search"></i> 搜索</button>
                     </span>
@@ -23,7 +22,7 @@ $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
             </div>
         </div>
     </div>
-    <table class="table">
+    <table class="table table-bordered table-hover dataTable">
         <thead>
         <tr>
             <th>ID</th>
@@ -33,6 +32,7 @@ $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
             <th>IP</th>
             <th>输入</th>
             <th>创建时间</th>
+            <th>操作</th>
         </tr>
         </thead>
         <tbody>
@@ -45,10 +45,10 @@ $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
                 <td>{{ $log['ip'] }}</td>
                 <td>{{ $log['input'] }}</td>
                 <td>{{ $log['created_at'] }}</td>
+                <td><a href="javascript:void(0);">删除</a></td>
             </tr>
         @endforeach
         </tbody>
     </table>
     <!-- Main content -->
 </section>
-</script>
