@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Hanus\Admin\Controller;
+namespace Oyhdd\Admin\Controller;
 
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Contract\RequestInterface;
@@ -11,7 +11,7 @@ use Hyperf\View\RenderInterface;
 use Phper666\JwtAuth\Jwt;
 use Lcobucci\JWT\Token;
 use Illuminate\Support\MessageBag;
-use Hanus\Admin\Model\AdminMenu;
+use Oyhdd\Admin\Model\AdminMenu;
 use Phper666\JwtAuth\Exception\TokenValidException;
 
 class AdminController
