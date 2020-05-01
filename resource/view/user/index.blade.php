@@ -41,7 +41,10 @@ $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
                 <td>{{ $user['name'] }}</td>
                 <td>{{ $user['status'] }}</td>
                 <td>{{ $user['created_at'] }}</td>
-                <td><a href="javascript:void(0);">删除</a></td>
+                <td>
+                    <a class="btn btn-primary btn-xs" style="color: white;">编辑</a>
+                    <a class="btn btn-danger btn-xs" style="color: white;">删除</a>
+                </td>
             </tr>
         @endforeach
         </tbody>
