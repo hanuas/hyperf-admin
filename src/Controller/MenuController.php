@@ -1,12 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Controller;
+namespace Hanus\Admin\Controller;
 
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Middleware;
-use Oyhdd\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Model\AdminMenu;
 
 /**
  * @Controller(prefix="admin/menu")
@@ -20,6 +21,7 @@ class MenuController extends AdminController
      */
     public function index()
     {
-        return $this->render('menu.index');
+        $menus = AdminMenu::all();
+        return $this->render('menu.index', ['menus' => $menus]);
     }
 }

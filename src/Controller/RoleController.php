@@ -1,12 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Controller;
+namespace Hanus\Admin\Controller;
 
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Middleware;
-use Oyhdd\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Model\AdminRole;
 
 /**
  * @Controller(prefix="admin/roles")
@@ -20,6 +21,7 @@ class RoleController extends AdminController
      */
     public function index()
     {
-        return $this->render('menu.index');
+        $roles = AdminRole::all();
+        return $this->render('role.index', ['roles' => $roles]);
     }
 }

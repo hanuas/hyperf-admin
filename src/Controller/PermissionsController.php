@@ -1,12 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Controller;
+namespace Hanus\Admin\Controller;
 
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Middleware;
-use Oyhdd\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Model\AdminPermission;
 
 /**
  * @Controller(prefix="admin/permissions")
@@ -20,6 +21,7 @@ class PermissionsController extends AdminController
      */
     public function index()
     {
-        return $this->render('menu.index');
+        $permissions = AdminPermission::all();
+        return $this->render('permiss.index', ['permissions' => $permissions]);
     }
-}
+}}

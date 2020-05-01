@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Oyhdd\Admin\Controller;
+namespace Hanus\Admin\Controller;
 
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;
 use Hyperf\Di\Annotation\Inject;
-use Oyhdd\Admin\Model\AdminUser;
+use Hanus\Admin\Model\AdminUser;
 use Illuminate\Hashing\BcryptHasher;
 use Hyperf\HttpServer\Annotation\Middleware;
-use Oyhdd\Admin\Middleware\AuthMiddleware;
+use Hanus\Admin\Middleware\AuthMiddleware;
 use Hyperf\HttpMessage\Cookie\Cookie;
 use Hyperf\Utils\Context;
 use Psr\Http\Message\ServerRequestInterface;

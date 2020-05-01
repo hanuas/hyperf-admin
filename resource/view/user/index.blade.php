@@ -1,5 +1,5 @@
 <?php
-$title = '权限';
+$title = '用户';
 $description = '列表';
 $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
 ?>
@@ -26,23 +26,21 @@ $breadcrumb[] = ['text' => $title, 'url' => '/admin'];
         <thead>
         <tr>
             <th>ID</th>
-            <th>名称</th>
-            <th>标识</th>
-            <th>请求方式</th>
-            <th>请求路径</th>
-            <th>添加时间</th>
+            <th>用户名</th>
+            <th>昵称</th>
+            <th>状态</th>
+            <th>创建时间</th>
             <th>操作</th>
         </tr>
         </thead>
         <tbody>
-        @foreach($permissions as $permission)
+        @foreach($users as $user)
             <tr>
-                <td>{{ $permission['id'] }}</td>
-                <td>{{ $permission['name'] }}</td>
-                <td>{{ $permission['slug'] }}</td>
-                <td>{{ $permission['http_method'] }}</td>
-                <td>{{ $permission['http_path'] }}</td>
-                <td>{{ $permission['created_at'] }}</td>
+                <td>{{ $user['id'] }}</td>
+                <td>{{ $user['username'] }}</td>
+                <td>{{ $user['name'] }}</td>
+                <td>{{ $user['status'] }}</td>
+                <td>{{ $user['created_at'] }}</td>
                 <td><a href="javascript:void(0);">删除</a></td>
             </tr>
         @endforeach
